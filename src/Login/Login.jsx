@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 import './Login.scss'
 import Logo from '../images/logo.png';
 import LoginImg from '../images/login.png';
@@ -17,6 +20,7 @@ export const Login = () => {
                         <form action="post" method="post">
                             <input type="text" placeholder="Username" name="login" id="login" />
                             <input type="text" placeholder="Password" name="password" id="password" />
+                            <FontAwesomeIcon icon={faCoffee} />
                         </form>
                     </div>
                 </div>
