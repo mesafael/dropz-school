@@ -1,0 +1,78 @@
+//cores
+$primary-color: #7c1c74;
+$grey: #adadad;
+$bg-dark: #343a40;
+$bg-light: #f0f0f0;
+
+body {
+    background-color: $bg-light;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0;
+    clear: both;
+}
+
+.wrapper {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.wrapper--login {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    height: 100vh;
+}
+
+.LoginImg{
+    width: 50%;
+    img{
+        width: 100%;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 50%;
+
+    h1 {
+        color: $primary-color;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        input {
+            background-color: transparent;
+            outline: none;
+            box-shadow: 0 0 0 0;
+            width: 200px;
+            border: 0 none;
+            border-bottom: solid 2px $grey;
+            padding: 12px 10px;
+            transition: .3s ease-in-out;
+
+            &:focus {
+                border-bottom: solid 2px $primary-color;
+            }
+        }
+    }
+}
